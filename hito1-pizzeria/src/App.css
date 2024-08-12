@@ -4,3 +4,21 @@
   padding: 2rem;
   text-align: center;
 }
+.error {
+  padding: 10px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  }
+
+
+.success {
+  padding: 10px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
