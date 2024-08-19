@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css'; // Asegúrate de crear este archivo CSS
+import './Header.css'; 
 
 function Header({ title, description }) {
   return (

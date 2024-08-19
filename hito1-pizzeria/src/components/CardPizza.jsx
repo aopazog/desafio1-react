@@ -1,18 +1,21 @@
 import React from 'react';
 
-function CardPizza({ name, price, ingredients, img }) {
+const CardPizza = ({ name, ingredients, price, image }) => {
   return (
     <div className="card">
-      <img src={img} className="card-img-top" alt={name} />
+      <img src={image} alt={name} className="card-img-top" />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
-        <p className="card-text">{ingredients.join(', ')}</p>
-        <p className="card-text">Precio: ${price.toLocaleString()}</p>
-        <button className="btn btn-primary">Ver más</button>
-        <button className="btn btn-success">Añadir</button>
+        <ul>
+          {ingredients.map((ingredient, index) => (
+            <li key={index}>{ingredient}</li>
+          ))}
+        </ul>
+        <p className="card-text">Precio: ${price}</p>
+        <button className="btn btn-primary">Agregar al carrito</button>
       </div>
     </div>
   );
-}
+};
 
 export default CardPizza;
